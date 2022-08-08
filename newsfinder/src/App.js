@@ -1,13 +1,19 @@
+import { Route, Routes } from 'react-router';
+
 import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import ArticleList from './components/ArticleList';
+import ArticleItem from './components/ArticleItem';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Main />
-      <Footer />
+      <>
+        <Header />
+        <Routes>
+          <Route path='/' element={<ArticleList />} />
+          <Route path='/article/:id' element={<ArticleItem />} />
+        </Routes>
+      </>
     </div>
   );
 }
