@@ -4,10 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 //Bootstrap 5.2.0
 import 'bootstrap/dist/css/bootstrap.min.css';
+//Styles Spinner
+import './css/Loading.css';
 
 ReactDOM.render(
     <BrowserRouter>
         <App />
     </BrowserRouter>,
     document.getElementById('root')
-  );
+);

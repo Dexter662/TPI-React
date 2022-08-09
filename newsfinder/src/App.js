@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router';
 
 import Header from './components/Header';
-import ArticleList from './components/ArticleList';
-import ArticleItem from './components/ArticleItem';
+import Addressing from './pages/Addressing';
+import ErrorPage from './components/ErrorPage';
 
 function App() {
   return (
@@ -10,8 +10,9 @@ function App() {
       <>
         <Header />
         <Routes>
-          <Route path='/' element={<ArticleList />} />
-          <Route path='/article/:id' element={<ArticleItem />} />
+          <Route path='/' element={<Addressing />} />
+          <Route path='/buscador' element={<Addressing />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </>
     </div>
