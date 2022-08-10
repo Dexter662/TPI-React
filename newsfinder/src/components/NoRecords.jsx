@@ -2,7 +2,7 @@
 function NoRecords() {
 return (
   <div className="text-center mt-5">
-    No records found to display.
+    No se encuentran noticias para mostrar.
   </div>
 );
 }

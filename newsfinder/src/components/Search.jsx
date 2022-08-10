@@ -37,10 +37,10 @@ function Search() {
                   <i className="fas fa-search h4 text-body"></i>
                 </div>
                 <div className="col">
-                  <input className="form-control form-control-lg form-control-borderless" type="search" placeholder="Enter at least 3 characters to search for a news..." autoFocus={true} value={search ?? ""} onChange={handleChange} />
+                  <input className="form-control form-control-lg form-control-borderless" type="search" placeholder="Ingrese 3 caracteres para comenzar a buscar una noticia..." autoFocus={true} value={search ?? ""} onChange={handleChange} />
                 </div>
                 <div className="col-auto">
-                  <button className="btn btn-lg btn-success" type="submit" disabled={!isValid} data-testid="button">Search</button>
+                  <button className="btn btn-lg btn-success" type="submit" disabled={!isValid} data-testid="button">Buscar</button>
                 </div>
               </div>
             </form>
