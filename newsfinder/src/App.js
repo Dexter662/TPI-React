@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router';
 
 import Header from './components/Header';
 import Addressing from './pages/Addressing';
-import ErrorPage from './components/ErrorPage';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   return (
